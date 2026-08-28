@@ -1,13 +1,17 @@
 ---
 layout: note
-title: SQL injection
+title: SQL injection (template)
 group: server-side
-status: in-progress
+status: not-started
 labs_done: 0
 labs_total: 19
 updated: 2026-08-28
-summary: Untrusted input reaching a SQL query unparameterised — still everywhere, still critical.
+summary: Placeholder showing the note format — delete this file once you have written the real one.
 ---
+> **This is a placeholder, not a real note.** It exists so the site has something to render
+> before you have written anything. Copy `_TEMPLATE.md` to `sql-injection.md`, write it in
+> your own words, then delete this file.
+
 
 ## What it is
 
