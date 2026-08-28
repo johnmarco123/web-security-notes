@@ -1,0 +1,6 @@
+# build output — regenerate with build.py
+site/
+
+# never publish these
+private/
+*.private.md
