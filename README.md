@@ -1,32 +1,31 @@
 # Notes
 
-One markdown file per topic. Each file is **both** your working notes and the published
-page — there is no second copy to keep in sync.
+One markdown file per topic. GitHub Pages builds the site with Jekyll on push — there is
+no local build step and nothing to run.
 
-## How it works
-
-Anything between `<!-- private:start -->` and `<!-- private:end -->` is stripped when the
-site is built. That's where the lab log and your "got stuck for an hour" material lives.
-Everything else is public.
-
-```bash
-python3 build.py              # -> site/   (private stripped — this is what you publish)
-python3 build.py --private    # -> site/   (everything, for your own review only)
-```
-
-Run it in WSL. Stdlib only, no dependencies.
-
-## Writing a note
+## Adding a topic
 
 ```bash
 cp _TEMPLATE.md access-control.md
 ```
 
-Fill in the frontmatter (`title`, `slug`, `group`, `status`, lab counts, `summary`), then
-write. The `summary` line is the card text on the index, so make it a real sentence.
+Fill in the frontmatter, write the four sections, commit, push. That's it.
 
-Update `apprentice:` and `practitioner:` counts as you go — the index bar and the footer
-totals are computed from them.
+```yaml
+---
+layout: note
+title: Access control
+group: server-side       # server-side | client-side | advanced
+status: in-progress      # not-started | in-progress | done
+labs_done: 4
+labs_total: 22
+updated: 2026-09-14
+summary: One sentence. This is the card text on the index.
+---
+```
+
+`labs_done` / `labs_total` drive the progress bar and the totals in the header and footer,
+so keep them current. `status` sets the pill colour and dims not-started cards.
 
 ## The four sections that matter
 
@@ -37,9 +36,19 @@ totals are computed from them.
 3. **Finding it in a live app** — the signal. Labs tell you where the bug is; real targets
    don't.
 4. **Fixing it** — code-level remediation. Almost nobody writing web-security notes can write
-   this section. You can. It's the whole reason an appsec team would hire you.
+   this section. You can, and it's the reason an appsec team would hire you.
 
-## Publishing
+## Turning on GitHub Pages
 
-`site/` is gitignored — it's build output, regenerated on demand. Commit the markdown.
-Before publishing anything about a real target, read `DISCLOSURE.md`.
+Repo → Settings → Pages → Source: **Deploy from a branch** → `main` / root.
+First build takes a minute or two. If it fails, the error shows in the Actions tab.
+
+## Images
+
+Drop them in `assets/` and reference as `![alt](assets/name.png)`.
+
+## Before publishing anything about a real target
+
+Read `DISCLOSURE.md`. Most programs forbid disclosure without written permission.
+`../hunting/` deliberately sits outside this repo — target names and recon output must
+never end up in a public repo.

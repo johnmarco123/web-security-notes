@@ -1,6 +1,6 @@
 # Writeups — the public half
 
-Everything in here is written to be published. `01-learning/portswigger/` is the private
+Everything in here is written to be published. `notes/` is the private
 half: raw notes, payloads, dead ends, "I got stuck for an hour on X". Never publish those.
 
 ## The rule
@@ -23,7 +23,7 @@ Publish the *class*, not the *answer*.
   This is the bulk of your Phase 1 and 2 output. ~25 of these by the end of Phase 2.
 - **`findings/`** — real disclosed bugs. Phase 2 onward. Far more valuable than everything
   else here combined. See the disclosure rules below.
-- **`tools/`** — anything you build in `03-tooling/` that's worth explaining. Your developer
+- **`tools/`** — anything you build in `tooling/` that's worth explaining. Your developer
   background is the differentiator; a well-explained tool proves it better than a CV line.
 
 ## Disclosure rules for `findings/` — read before publishing any real bug

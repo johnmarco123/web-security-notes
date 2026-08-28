@@ -1,10 +1,10 @@
 ---
+layout: note
 title: SQL injection
-slug: sql-injection
 group: server-side
 status: in-progress
-apprentice: 0/2
-practitioner: 0/17
+labs_done: 0
+labs_total: 19
 updated: 2026-08-28
 summary: Untrusted input reaching a SQL query unparameterised — still everywhere, still critical.
 ---
@@ -38,8 +38,6 @@ This is your edge. Almost nobody writing web-security notes can write this secti
 ```
 ```
 
-<!-- private:start -->
-
 ## Lab log
 
 `+` solved unaided · `~` needed a hint · `!` read the solution
@@ -48,8 +46,4 @@ This is your edge. Almost nobody writing web-security notes can write this secti
 |---|---|---|
 |  |  |  |
 
-## Revisit before Practitioner tier
-
-Everything marked `~` or `!` above. If this list is empty, you rushed.
-
-<!-- private:end -->
+Everything marked `~` or `!` is the revisit list before Practitioner tier.

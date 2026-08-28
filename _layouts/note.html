@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<div class="wrap">
+  <a class="back" href="{{ '/' | relative_url }}">&larr; all topics</a>
+  <h1>{{ page.title }}</h1>
+  {% if page.summary %}<p class="lede">{{ page.summary }}</p>{% endif %}
+  <div class="meta">
+    <span class="pill {{ page.status }}">{{ page.status | replace: '-', ' ' }}</span>
+    {% if page.labs_total > 0 %}
+      <span class="pill">{{ page.labs_done }}/{{ page.labs_total }} labs</span>
+    {% endif %}
+  </div>
+  {{ content }}
+  {% if page.updated %}<footer>Updated {{ page.updated }}</footer>{% endif %}
+</div>

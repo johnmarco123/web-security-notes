@@ -1,0 +1,11 @@
+title: Web Security Notes
+description: >-
+  Working notes from the PortSwigger Web Security Academy — what each vulnerability
+  class is, why it survives code review, how to find it in a live application, and
+  how to fix it in code.
+
+exclude:
+  - README.md
+  - DISCLOSURE.md
+  - _TEMPLATE.md
+  - _APPRENTICE-CHECKLIST.md

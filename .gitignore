@@ -1,6 +1,4 @@
-# build output — regenerate with build.py
-site/
-
-# never publish these
-private/
-*.private.md
+# Jekyll build output — GitHub Pages builds this server-side
+_site/
+.jekyll-cache/
+.jekyll-metadata

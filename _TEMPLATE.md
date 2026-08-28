@@ -1,12 +1,12 @@
 ---
+layout: note
 title: <Topic name>
-slug: <kebab-case-slug>
 group: server-side          # server-side | client-side | advanced
 status: in-progress         # not-started | in-progress | done
-apprentice: 0/0
-practitioner: 0/0
+labs_done: 0
+labs_total: 0
 updated: 2026-08-28
-summary: <one sentence — this is the card text on the site index>
+summary: <one sentence — this is the card text on the index>
 ---
 
 ## What it is
@@ -38,8 +38,6 @@ This is your edge. Almost nobody writing web-security notes can write this secti
 ```
 ```
 
-<!-- private:start -->
-
 ## Lab log
 
 `+` solved unaided · `~` needed a hint · `!` read the solution
@@ -48,8 +46,4 @@ This is your edge. Almost nobody writing web-security notes can write this secti
 |---|---|---|
 |  |  |  |
 
-## Revisit before Practitioner tier
-
-Everything marked `~` or `!` above. If this list is empty, you rushed.
-
-<!-- private:end -->
+Everything marked `~` or `!` is the revisit list before Practitioner tier.

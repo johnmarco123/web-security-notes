@@ -1,0 +1,44 @@
+---
+layout: default
+title: null
+---
+{% assign notes = site.pages | where: "layout", "note" %}
+{% assign done = 0 %}{% assign total = 0 %}{% assign complete = 0 %}
+{% for p in notes %}
+  {% assign done = done | plus: p.labs_done %}
+  {% assign total = total | plus: p.labs_total %}
+  {% if p.status == 'done' %}{% assign complete = complete | plus: 1 %}{% endif %}
+{% endfor %}
+
+<div class="wrap wide">
+  <h1>Web security notes</h1>
+  <p class="lede">{{ site.description }}</p>
+
+  {% if total > 0 %}
+    {% assign pct = done | times: 100 | divided_by: total %}
+    <div class="bar"><i style="width:{{ pct }}%"></i></div>
+  {% endif %}
+
+  {% assign groups = "server-side,client-side,advanced" | split: "," %}
+  {% for g in groups %}
+    {% assign items = notes | where: "group", g | sort: "title" %}
+    {% if items.size > 0 %}
+      <div class="grp">
+        <span class="lbl">{{ g | replace: '-', ' ' }} &mdash; {{ items.size }}</span>
+        <div class="cards">
+          {% for n in items %}
+            <a class="card {{ n.status }}" href="{{ n.url | relative_url }}">
+              <div class="t">
+                <span>{{ n.title }}</span>
+                {% if n.labs_total > 0 %}<span class="n">{{ n.labs_done }}/{{ n.labs_total }}</span>{% endif %}
+              </div>
+              <div class="s">{{ n.summary }}</div>
+            </a>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+
+  <footer>{{ complete }} of {{ notes.size }} topics complete &middot; {{ done }} of {{ total }} labs</footer>
+</div>
