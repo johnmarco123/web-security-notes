@@ -1,3 +1,6 @@
+url: "https://johnmarco123.github.io"
+baseurl: "/web-security-notes"
+
 title: Web Security Notes
 description: >-
   Working notes from the PortSwigger Web Security Academy — what each vulnerability
