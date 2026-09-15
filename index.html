@@ -5,8 +5,6 @@ title: null
 {% assign notes = site.pages | where: "layout", "note" %}
 {% assign done = 0 %}{% assign total = 0 %}{% assign complete = 0 %}
 {% for p in notes %}
-  {% assign done = done | plus: p.labs_done %}
-  {% assign total = total | plus: p.labs_total %}
   {% if p.status == 'done' %}{% assign complete = complete | plus: 1 %}{% endif %}
 {% endfor %}
 
@@ -30,7 +28,6 @@ title: null
             <a class="card {{ n.status }}" href="{{ n.url | relative_url }}">
               <div class="t">
                 <span>{{ n.title }}</span>
-                {% if n.labs_total > 0 %}<span class="n">{{ n.labs_done }}/{{ n.labs_total }}</span>{% endif %}
               </div>
               <div class="s">{{ n.summary }}</div>
             </a>
@@ -40,5 +37,4 @@ title: null
     {% endif %}
   {% endfor %}
 
-  <footer>{{ complete }} of {{ notes.size }} topics complete &middot; {{ done }} of {{ total }} labs</footer>
 </div>
