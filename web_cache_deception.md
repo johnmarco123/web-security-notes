@@ -77,19 +77,3 @@ non-cacheable resource with a path traversal sequence and an arbitrary
 directory at the start of the path. To choose a non-cacheable resource, look
 for a non-idempotent method like POST. For example, modify /profile to
 /aaa/..%2fprofile:
-
-## Lab log
-
-`+` solved unaided · `~` needed a hint · `!` read the solution
-
-| Lab                                                  | Mark | What the trick was / what tripped me up                                                                                             |
-|------------------------------------------------------|------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Lab: Exploiting path mapping for web cache deception | !    | When delivering the exploit i can't just give the url, it has to be wrapped in script tags, meaning XSS is required to exploit this |
-|||
-
-Everything marked `~` or `!` is the revisit list before Practitioner tier.
-
-
-
-
-JENNY

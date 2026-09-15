@@ -23,13 +23,3 @@ define characters that don't need encoding and make sure all other user inputs
 are encoded before its used in a serverside request
 
 ## Payloads worth keeping
-
-## Lab log
-
-`+` solved unaided · `~` needed a hint · `!` read the solution
-
-| Lab                                                               | Mark | What the trick was / what tripped me up |
-|-------------------------------------------------------------------|------|-----------------------------------------|
-| Exploiting server-side parameter pollution in a query string      | !    | just didn't know enough                 |
-
-Everything marked `~` or `!` is the revisit list before Practitioner tier.
