@@ -14,6 +14,7 @@ summary: <one sentence — this is the card text on the index>
 One paragraph, in your own words, no copy-paste. If you can't write it without looking it
 up, you haven't learned it yet.
 
+## Extensions to use
 ## Why it survives code review
 
 Not the definition — the internet has that. Why does this keep reaching production? What
