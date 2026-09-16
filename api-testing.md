@@ -2,7 +2,7 @@
 layout: note
 title: API testing
 group: server-side
-status: in-progress
+status: done
 updated: 2026-08-28
 summary: API testing is basically testing authentication, and such. Also other things such as parameter polution, etc.
 ---

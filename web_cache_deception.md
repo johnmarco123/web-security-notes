@@ -22,9 +22,10 @@ While testing, make sure the cache key that we decide on keeps changing,
 otherwise cached responses will impact our results
 
 ## Extensions to use
-Param miner extension: we use this, go to param miner -> settings and add
-dynamic cachebuster, burp now will add unique query strings to every request,
-so we don't have to `^.^`
+Param miner extension: we use this, go to param miner ->
+settings and add dynamic cachebuster, burp now will add
+unique query strings to every request, so we don't have to
+`^.^`
 
 ## Why it survives code review
 
@@ -53,8 +54,6 @@ In some cases, /profile;foo.css can get through via delimiter discrepancies.
 ## Delimiters
 ;
 %00 which is an encoded null character
-```
-```
 
 ## Notes
 to test you can first check the following:
