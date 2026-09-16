@@ -1,10 +1,8 @@
-[---](---)
+---
 layout: note
 title: Web Cache Deception
-group: server-side / cache layers
-status: in-progress
-labs_done: 0
-labs_total: 19
+group: server-side
+status: done
 updated: 2026-08-28
 summary: Placeholder showing the note format — delete this file once you have written the real one.
 ---

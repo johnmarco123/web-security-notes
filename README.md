@@ -17,15 +17,12 @@ layout: note
 title: Access control
 group: server-side       # server-side | client-side | advanced
 status: in-progress      # not-started | in-progress | done
-labs_done: 4
-labs_total: 22
 updated: 2026-09-14
 summary: One sentence. This is the card text on the index.
 ---
 ```
 
-`labs_done` / `labs_total` drive the progress bar and the totals in the header and footer,
-so keep them current. `status` sets the pill colour and dims not-started cards.
+`status` sets the pill colour and dims not-started cards.
 
 ## The four sections that matter
 

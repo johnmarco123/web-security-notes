@@ -3,8 +3,6 @@ layout: note
 title: <Topic name>
 group: server-side          # server-side | client-side | advanced
 status: in-progress         # not-started | in-progress | done
-labs_done: 0
-labs_total: 0
 updated: 2026-08-28
 summary: <one sentence — this is the card text on the index>
 ---
@@ -38,13 +36,3 @@ This is your edge. Almost nobody writing web-security notes can write this secti
 
 ```
 ```
-
-## Lab log
-
-`+` solved unaided · `~` needed a hint · `!` read the solution
-
-| Lab | Mark | What the trick was / what tripped me up |
-|---|---|---|
-|  |  |  |
-
-Everything marked `~` or `!` is the revisit list before Practitioner tier.

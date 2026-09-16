@@ -3,8 +3,6 @@ layout: note
 title: SQL injection (template)
 group: server-side
 status: not-started
-labs_done: 0
-labs_total: 19
 updated: 2026-08-28
 summary: Placeholder showing the note format — delete this file once you have written the real one.
 ---
@@ -41,13 +39,3 @@ This is your edge. Almost nobody writing web-security notes can write this secti
 
 ```
 ```
-
-## Lab log
-
-`+` solved unaided · `~` needed a hint · `!` read the solution
-
-| Lab | Mark | What the trick was / what tripped me up |
-|---|---|---|
-|  |  |  |
-
-Everything marked `~` or `!` is the revisit list before Practitioner tier.

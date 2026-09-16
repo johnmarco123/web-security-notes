@@ -70,9 +70,6 @@ margin-bottom:3px;display:flex;justify-content:space-between;gap:10px;align-item
 .card .s{font-size:13.5px;color:var(--muted);line-height:1.5}
 .card .n{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--muted);flex:none}
 .card.not-started{opacity:.55}
-.bar{height:6px;background:var(--surface2);border:1px solid var(--line);border-radius:99px;
-overflow:hidden;margin:22px 0 34px}
-.bar i{display:block;height:100%;background:var(--accent)}
 .back{font-size:13.5px;color:var(--muted);text-decoration:none;display:inline-block;
 margin-bottom:22px}
 .back:hover{color:var(--accent)}
@@ -83,11 +80,6 @@ color:var(--muted)}
 <body>
 <header class="top"><div class="in">
   <a class="home" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-  {% assign done = 0 %}{% assign total = 0 %}
-  {% for p in site.pages %}{% if p.layout == 'note' %}
-    {% assign done = done | plus: p.labs_done %}{% assign total = total | plus: p.labs_total %}
-  {% endif %}{% endfor %}
-  {% if total > 0 %}<span>{{ done }}/{{ total }} labs</span>{% endif %}
 </div></header>
 {{ content }}
 </body>

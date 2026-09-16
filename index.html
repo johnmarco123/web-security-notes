@@ -3,19 +3,10 @@ layout: default
 title: null
 ---
 {% assign notes = site.pages | where: "layout", "note" %}
-{% assign done = 0 %}{% assign total = 0 %}{% assign complete = 0 %}
-{% for p in notes %}
-  {% if p.status == 'done' %}{% assign complete = complete | plus: 1 %}{% endif %}
-{% endfor %}
 
 <div class="wrap wide">
   <h1>Web security notes test</h1>
   <p class="lede">{{ site.description }}</p>
-
-  {% if total > 0 %}
-    {% assign pct = done | times: 100 | divided_by: total %}
-    <div class="bar"><i style="width:{{ pct }}%"></i></div>
-  {% endif %}
 
   {% assign groups = "server-side,client-side,advanced" | split: "," %}
   {% for g in groups %}

@@ -2,9 +2,7 @@
 layout: note
 title: API testing
 group: server-side
-status: started
-labs_done: 0
-labs_total: 19
+status: in-progress
 updated: 2026-08-28
 summary: 
 ---
