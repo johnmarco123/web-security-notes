@@ -1,14 +1,16 @@
 ---
 layout: note
-title: Server-side vulnerabilities
+title: Server-side vulnerabilities (basics)
 group: server-side
-status: in-progress
+status: done
 updated: 2026-09-15
 summary: Server side vulnerabilities can be many things, such as path traversal, access control, broken authentication and many more
 ---
 
 ## What it is
-There is plenty of server side vulnerabilities, those including but not limited to:
+There is plenty of server side vulnerabilities, those including but not limited
+to the ones below. I only briefly describe each topic, but they also can be
+broken down further in various ways, or chained with other attacks
 * Path traversal
  This can be utilized when getting files, a get request for a file -> this can
  be sent to repeater, and try to traverse paths this way. This is one of many
@@ -36,8 +38,19 @@ There is plenty of server side vulnerabilities, those including but not limited 
     1. If they dont care for extensions such as PHP extension, you can simply
        upload a php file and it may run. More often then not though they have
        filters you may be able to weasle around
+    2. Sometimes the pieces of a file that get sent in the request, state the
+       type, changing this to image/jpeg may also allow it through 
 * OS command injection
+    1. Some systems run commands to get outputs, such as lets say theres a
+       "storeid" and they run it in a shell directly, maybe i can run 1|whoami
+       and it will run the whoami part in shell
 * SQL injection
+    1. Sometimes SQL isn't sanitized correctly from the user, when being put
+       into a query, this can lead to sql injection which can allow a hacker to
+       see / modify data that they should not be able to.
+    2. An example is giving a parameter '+OR+1=1--
+    3. The example above is likely never gonna happen, but there are some times
+       still ways around the current security enforced that they have
 
 ## Why it survives code review
 It is tedious, and also very complex to ensure a server is entirely secure, and
