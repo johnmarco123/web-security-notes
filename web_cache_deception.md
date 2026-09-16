@@ -4,7 +4,8 @@ title: Web Cache Deception
 group: server-side
 status: done
 updated: 2026-08-28
-summary: Placeholder showing the note format — delete this file once you have written the real one.
+summary: Cache a valuable resource as if it was a static file, which allows
+attacker to view victims file via cache
 ---
 
 

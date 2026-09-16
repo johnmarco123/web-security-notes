@@ -4,7 +4,8 @@ title: API testing
 group: server-side
 status: in-progress
 updated: 2026-08-28
-summary: 
+summary: API testing is basically testing authentication, and such. Also other
+things such as parameter polution, etc.
 ---
 
 ## What it is
