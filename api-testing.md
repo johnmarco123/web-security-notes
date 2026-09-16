@@ -21,3 +21,4 @@ define characters that don't need encoding and make sure all other user inputs
 are encoded before its used in a serverside request
 
 ## Payloads worth keeping
+N/A
