@@ -4,8 +4,7 @@ title: Web Cache Deception
 group: server-side
 status: done
 updated: 2026-08-28
-summary: Cache a valuable resource as if it was a static file, which allows
-attacker to view victims file via cache
+summary: Cache a valuable resource as if it was a static file, which allows attacker to view victims file via cache
 ---
 
 
